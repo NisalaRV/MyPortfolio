@@ -1,0 +1,127 @@
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    height: 50px;
+    width: 100vw;
+    box-shadow: 0 1px 2px 1px gray;
+}
+
+body > header > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body > header > nav > menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+}
+
+body > header > nav > menu > li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+body > main > section:nth-child(1) > nav > menu > li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+main {
+    position: relative;
+    top: 45px;
+}
+
+body > main > section:nth-child(1) {
+    width: 300px;
+    /*height: 100%;*/
+    background-color: deepskyblue;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+body > main > section > menu {
+    position: relative;
+    left: 5px;
+}
+
+body > main > section > menu > li {
+    position: relative;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body > main > section:nth-child(2) {
+    margin-left: 310px;
+}
+
+body > main > section:nth-child(2) > p {
+    margin-bottom: 0;
+}
+
+body > main > section:nth-child(2) > section {
+    border: black solid 1px;
+    position: relative;
+    height: 300px;
+    margin: 10px;
+}
+
+body > main > section:nth-child(2) > section > div {
+    /*border: black solid 1px;*/
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+}
+
+body > main > section:nth-child(2) > section > div:nth-child(1) {
+    position: absolute;
+    left: 0;
+}
+
+body > main > section:nth-child(2) > section > div:nth-child(2) {
+    position: absolute;
+    left: calc(100% / 3);
+}
+
+body > main > section:nth-child(2) > section > div:nth-child(3) {
+    position: absolute;
+    right: 0;
+
+}
+
+body > main > section:nth-child(2) > section > div > img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+footer {
+    height: 60px;
+    position: relative;
+    background-color: gray;
+}
+
+footer > p {
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 20px
+}
+menu {
+    list-style-type: none;
+}
