@@ -1,0 +1,76 @@
+section {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 1200px;
+    height: 600px;
+
+    display: grid;
+    margin: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;}
+
+section>div:hover{
+    transform: scale(1.08);
+}
+
+section>div{
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 2px 1px 1px black;
+}
+
+section>div:nth-child(1){
+    background-image: url("istockphoto-486506506-612x612.jpg");
+
+}
+
+section>div:nth-child(2){
+    background-image: url("istockphoto-522148349-612x612.jpg");
+
+}
+section>div:nth-child(3){
+    background-image: url("istockphoto-637135886-612x612.jpg");
+
+
+}
+section>div:nth-child(4){
+    background-image: url("istockphoto-952716620-612x612.jpg");
+
+}
+section>div:nth-child(5){
+    background-image: url("istockphoto-1059088442-612x612.jpg");
+
+
+}
+section>div:nth-child(6){
+    background-image: url("istockphoto-1125634321-612x612.jpg");
+
+}
+section>div:nth-child(7){
+    background-image: url("istockphoto-1133441880-612x612.jpg");
+
+
+}
+section>div:nth-child(8){
+    background-image: url("istockphoto-1181382649-612x612.jpg");
+
+
+}
+section>div:nth-child(9){
+    background-image: url("istockphoto-1191225810-612x612.jpg");
+
+}
+section>div:nth-child(10){
+    background-image: url("istockphoto-1266076291-612x612.jpg");
+
+}
+section>div:nth-child(11){
+    background-image: url("istockphoto-1346277278-612x612.jpg");
+
+
+}
+section>div:nth-child(12){
+    background-image: url("istockphoto-1406973228-612x612.jpg");
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../normalize.css ">
+    <title>Title</title>
+    <style>
+        div {
+            position: relative;
+            height: 50px;
+            width: 300px;
+            background-color: deeppink;
+            margin-left: 0;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            transition: 2s;
+            /*left: 0px;*/
+            left: -250px;
+        }
+
+        div > p {
+            position: relative;
+            left: 50px;
+            top: 15px;
+            font-size: 15px;
+        }
+        div:hover{
+            /*width: 200px;*/
+            transition: 3s;
+            left : 0;
+        }
+        p:hover{
+            /*width: 100px;*/
+            transition: 2s;
+           /* left: 50px;*/
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <div><p>menu one</p></div>
+    <div><p>menu two</p></div>
+    <div><p>menu theree</p></div>
+    <div><p>menu four</p></div>
+    <div><p>menu five</p></div>
+
+</nav>
+</body>
+</html>
