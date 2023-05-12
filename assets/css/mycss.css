@@ -1,0 +1,578 @@
+:root
+{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+    --skin-color-:#FF6E00;
+    --bg-brown-:#222222;
+    --bg-white-900:#FFFFFF;
+    --bg-black2-900:#151515;
+
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+::before,::after
+{
+    box-sizing: border-box;
+}
+ul
+{
+    list-style: none;
+}
+
+.section
+{
+    background: var(--bg-black2-900);
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+}
+.main-content
+{
+    padding-left: 270px;
+
+}
+.padd-15
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container
+{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+
+}
+.section.container
+{
+    padding-top: 60px;
+    padding-bottom: 70px;
+
+}
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.section-title h2
+{
+    font-size: 40px;
+    /*color: var(--bg-white-900);*/
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 60px;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: 40px;
+    position: relative;
+    color: white ;
+
+}
+.btn
+{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--skin-color-);
+    transition: all 0.3s ease;
+
+}
+.btn:hover
+{
+    transform: scale(1.05);
+}
+
+/*aside*/
+.aside
+{
+    width: 270px;
+    background: var(--bg-brown-);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.aside .nav
+{
+    margin-top: 50px;
+}
+.aside .nav li
+{
+    margin-bottom: 20px;
+    display: block;
+}
+.aside .nav li a
+{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    border-bottom: ipx solid var(--bg-black-50);
+    color: var(--bg-white-900);
+    padding: 1px 20px;
+    margin-bottom: -8px;
+}
+/*home*/
+.home
+{
+    min-height: 100vh;
+    display: flex;
+    color: var(--text-black-900);
+}
+.home .home-info
+{
+    flex: 0 0 60% ;
+    max-width: 60%;
+}
+h3.Hello
+{
+    color:var(--bg-white-900);
+    font-size: 45px;
+    margin: 15px 0;
+}
+.name
+{
+    color: var(--skin-color-);
+}
+h3.full-stack
+{
+    font-size: 30px;
+    margin: 15px 0;
+
+}
+.typing
+{
+    font-size: 39px;
+    padding-bottom: 10px;
+}
+h4.follow
+{
+    color: var(--bg-white-900);
+    font-size: 25px;
+    margin: 22px 0;
+}
+h4.home_social
+{
+    color: var(--bg-white-900);
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.home .home-img
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}.home-img::after
+ {
+     content: '';
+     position: absolute;
+     height: 80px;
+     width: 80px;
+     border-bottom: 10px solid var(--skin-color-);
+     border-right: 10px solid var(--skin-color-);
+
+     right: 20px;
+     bottom: -40px;
+ }
+.home-img::before
+{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color-);
+    border-left: 10px solid var(--skin-color-);
+
+    left: -20px;
+    top: -40px;
+}
+
+.home .home-img img
+{
+    margin: auto;
+    border-radius: 5px;
+    height: 400px;
+
+}
+.aboutimg>img
+{
+    height: 400px;
+    width: auto;
+}
+/*#txth1*/
+/*{*/
+/*color: var(--bg-white-900);*/
+/*}*/
+
+.nnn h1,p{
+    color: var(--bg-white-900);
+    padding: 5px;
+}
+.nnn
+{
+    position: absolute;
+    top: 142px;
+    left: 361px;
+}
+
+#namec
+{
+    color: var(--skin-color-);
+    padding-left: 10px;
+}
+.skincolors {
+    color: var(--skin-color-);
+    padding-left: 10px;
+}
+/*projet*/
+section.artical.resumecls{
+    margin: 50px ;
+
+}
+/* contact*/
+.contact-title
+{
+    color: var(--skin-color-);
+    /*text-align: center;*/
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 398px;
+}
+
+.contact-sub-title
+{
+    color: var(--bg-black-100);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+
+}
+.contact .contact-info-item
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item .icon
+{
+    display: inline-block;
+}
+.contact .contact-info-item .fa
+{
+    font-size: 25px;
+    color: var(--skin-color-);
+}
+.contact .contact-info-item h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+#row1{
+}
+#zzz{
+    justify-content: space-around;
+    /*color: var(--skin-color-);*/
+    margin-left: 35px;
+}
+form#form {
+    padding: 20px;
+    width: 60vw;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+}
+input#name{
+    width: 40%;
+    position: absolute;
+}
+input#email{
+    width: 50%;
+    left: 50%;
+    position: relative;
+}
+input,
+textarea {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 28px;
+    margin-bottom: 10px;
+    background-color: #222222;
+    color: #44444C;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgb(201, 211, 214);
+}
+button {
+    background-color:#FF6E00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 300px;
+    height: 50px;
+    position:absolute;
+
+}
+
+button:hover {
+    background-color: #FECB02;
+    color: #1E1E1E;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#chattitele{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+#button{
+    padding-right: 300px;
+}
+.skil ul
+{
+    top: -16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #44444C;
+    width: 75vw;
+    height: 20vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+
+}
+#skils2
+{
+    padding-top:45px;
+}
+.aboutset
+{
+    position: relative;
+    left: 125px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+#hisize
+{
+    font-size: 42px;
+    padding-bottom: 25px;
+
+}
+#hisize span
+{
+    color: #FECB02;
+}
+#pid
+{
+    font-size: 18px;
+}
+.btnhire
+{
+    padding-left: 111px;
+}
+.full-stack
+{
+    padding-bottom: 20px;
+}
+h2.skinc
+{
+    color: #FF6E00;
+    margin-top: -31px;
+}
+h2.skincolors
+{
+    color: #FF6E00;
+}
+.edicolr
+{
+    color: #FF6E00;
+    padding-left: 20px;
+    font-size: 30px;
+}
+.scl
+{
+    margin-bottom: 43px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.hnd
+{
+    margin-bottom: 35px;
+    margin-top: 11px;
+    margin-left: 29px;
+    font-size: 25px;
+}
+.itxt
+{
+    margin-bottom: 35px;
+    margin-top: -10px;
+    margin-left: 42px;
+}
+
+.fa-map-marker-alt
+{
+    color: #FF6E00;
+    margin-left: 81px;
+}
+.fa-phone
+{
+    color: #FF6E00;
+    margin-left: 25px;
+}
+.fa-envelope
+{
+    color: #FF6E00;
+    margin-left: 68px;
+
+}
+.locc
+{
+    margin-left: 57px;
+}
+.emaill
+{
+    margin-left: 57px;
+}
+.aboutmee
+{
+    margin-top: 10px;
+}
+.skilsss
+{
+    margin-top: 10px;
+}
+.resumee
+{
+    margin-top: 10px;
+}
+.projectss
+{
+    margin-top: 10px;
+}
+.conttt
+{
+    margin-top: 10px;
+}
+.resumecls
+{
+    border-left: .3rem solid #FF6E00;
+    border-bottom: 10px;
+}
+.homee
+{
+    height: 30px;
+    width: 30px;
+    margin-left: -17px;
+    margin-bottom: -37px;
+}
+.aboutt
+{
+    height: 80px;
+    width: 88px;
+    margin-left: -48px;
+    margin-bottom: -61px;
+}
+.skil1 {
+    height: 60px;
+    margin-left: -32px;
+    margin-bottom: -49px;
+}
+.resum1
+{
+    height: 35px;
+    margin-left: -16px;
+    margin-bottom: -37px;
+}
+.pro1
+{
+    height: 35px;
+    margin-left: -16px;
+    margin-bottom: -37px;
+}
+.cont1
+{
+    height: 40px;
+    margin-left: -17px;
+    margin-bottom: -41px;
+}
+
+.alph {
+    height: 137px;
+    margin-right: -124px;
+    margin-bottom: 454px;
+}
+#txth1
+{
+    font-size: 30px;
+    margin-top: 18px;
+}
+.whitee
+{
+    widht :100px;
+    margin-top: 21px;
+}
+.achiv
+{
+    font-style: italic;
+    margin-top: -11px;
+    font-size: 30px;
+}
