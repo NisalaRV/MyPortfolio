@@ -576,3 +576,17 @@ h2.skincolors
     margin-top: -11px;
     font-size: 30px;
 }
+.active:hover
+{
+    color: #FF6E00;
+    transform: scale(1.2);
+
+}
+.galry{
+    margin-top: 10px;
+}
+.g1{
+    height: 25px;
+    margin-left: -11px;
+    margin-bottom: -30px;
+}
