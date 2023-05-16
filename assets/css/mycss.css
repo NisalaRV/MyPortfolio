@@ -565,11 +565,11 @@ h2.skincolors
     font-size: 30px;
     margin-top: 18px;
 }
-.whitee
-{
-    widht :100px;
-    margin-top: 21px;
-}
+/*.whitee*/
+/*{*/
+/*    widht :100px;*/
+/*    margin-top: 21px;*/
+/*}*/
 .achiv
 {
     font-style: italic;
@@ -616,43 +616,66 @@ h2.skincolors
 }
 
 .glast div:nth-child(1){
-    background-image: url("../../assignments/css/case 5/istockphoto-952716620-612x612.jpg");
+    background-image: url("../image/121212.jpeg");
 
 }
 
 .glast div:nth-child(2){
-    background-image: url("../../assignments/css/case 5/istockphoto-1059088442-612x612.jpg");
+    background-image: url("../image/1010.jpeg");
 
 }
 .glast div:nth-child(3){
-    background-image: url("../../assignments/css/case 6/istockphoto-637135886-612x612.jpg");
+    background-image: url("../image/777.jpeg");
 
 
 }
 .glast div:nth-child(4){
-    background-image: url("../../assignments/css/case 5/istockphoto-952716620-612x612.jpg");
+    background-image: url("../image/6666.jpeg ");
 
 }
 .glast div:nth-child(5){
-    background-image: url("../../assignments/css/case 5/istockphoto-952716620-612x612.jpg");
+    background-image: url("../image/555.jpg");
 
 
 }
 .glast div:nth-child(6){
-    background-image: url("../../assignments/css/case 5/istockphoto-952716620-612x612.jpg");
+    background-image: url("../image/3333.jpeg");
 
 }
 .glast div:nth-child(7){
-    background-image: url("../../assignments/css/case 5/istockphoto-637135886-612x612.jpg");
+    background-image: url("../image/333.jpeg");
 
 
 }
 .glast div:nth-child(8){
-    background-image: url("../../assignments/Animations/case5/istockphoto-1059088442-612x612.jpg");
+    background-image: url("../image/1111 (1).jpg");
 
 
 }
 .glast div:nth-child(9){
-    background-image: url("../../assignments/css/case 6/istockphoto-952716620-612x612.jpg");
+    background-image: url("../image/222.jpg");
 
+}
+.anim
+{
+    position: absolute;
+    margin: 326px;
+}
+.cs1
+{
+    margin-left: -276px;
+    margin-top: 161px;
+    width: 250px;
+}
+.cs2
+{
+    margin-top: -192px;
+}
+.cs3
+{
+    margin-left: 393px;
+    width: 300px;
+    height: 200px;
+    margin-top: -232px;
+    margin-bottom: 30px;
 }
