@@ -558,7 +558,7 @@ h2.skincolors
 .alph {
     height: 137px;
     margin-right: -124px;
-    margin-bottom: 454px;
+    margin-bottom: 490px;
 }
 #txth1
 {
@@ -589,4 +589,70 @@ h2.skincolors
     height: 25px;
     margin-left: -11px;
     margin-bottom: -30px;
+}
+.glast
+ {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 1000px;
+    height: 500px;
+
+    display: grid;
+    margin: auto;
+
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;}
+
+.glast div:hover{
+    transform: scale(1.08);
+}
+
+.glast div{
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 2px 1px 1px black;
+}
+
+.glast div:nth-child(1){
+    background-image: url("../../assignments/css/case 5/istockphoto-952716620-612x612.jpg");
+
+}
+
+.glast div:nth-child(2){
+    background-image: url("../../assignments/css/case 5/istockphoto-1059088442-612x612.jpg");
+
+}
+.glast div:nth-child(3){
+    background-image: url("../../assignments/css/case 6/istockphoto-637135886-612x612.jpg");
+
+
+}
+.glast div:nth-child(4){
+    background-image: url("../../assignments/css/case 5/istockphoto-952716620-612x612.jpg");
+
+}
+.glast div:nth-child(5){
+    background-image: url("../../assignments/css/case 5/istockphoto-952716620-612x612.jpg");
+
+
+}
+.glast div:nth-child(6){
+    background-image: url("../../assignments/css/case 5/istockphoto-952716620-612x612.jpg");
+
+}
+.glast div:nth-child(7){
+    background-image: url("../../assignments/css/case 5/istockphoto-637135886-612x612.jpg");
+
+
+}
+.glast div:nth-child(8){
+    background-image: url("../../assignments/Animations/case5/istockphoto-1059088442-612x612.jpg");
+
+
+}
+.glast div:nth-child(9){
+    background-image: url("../../assignments/css/case 6/istockphoto-952716620-612x612.jpg");
+
 }
