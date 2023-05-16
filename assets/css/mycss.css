@@ -686,3 +686,21 @@ h2.skincolors
     margin-top: -232px;
     margin-bottom: 30px;
 }
+
+/*<--responsive-->*/
+@media (max-width: 1440px) {
+    .aside
+    {
+        left: -270px;
+    }
+    .main-content
+    {
+        padding-left: 0;
+    }
+    .about .about-content .persanal-info .contact-info-item p span
+    {
+        display: block;
+        margin-left: 0;
+    }
+
+}
