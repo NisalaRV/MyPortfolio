@@ -161,7 +161,7 @@ ul
 h3.Hello
 {
     color:var(--bg-white-900);
-    font-size: 45px;
+    font-size: 48px;
     margin: 15px 0;
 }
 .name
@@ -233,6 +233,7 @@ h4.home_social
 .aboutimg>img
 {
     height: 400px;
+    border-radius: 20px;
     width: auto;
 }
 /*#txth1*/
@@ -686,21 +687,31 @@ h2.skincolors
     margin-top: -232px;
     margin-bottom: 30px;
 }
+.imgcls
+{
+    width: 350px;
+    height: 400px;
+}
 
-/*<--responsive-->*/
-@media (max-width: 1440px) {
-    .aside
-    {
-        left: -270px;
-    }
-    .main-content
-    {
-        padding-left: 0;
-    }
-    .about .about-content .persanal-info .contact-info-item p span
-    {
-        display: block;
-        margin-left: 0;
-    }
-
+.resimg
+{
+    width: 310px;
+    height: 190px;
+}
+.sennn
+{
+    width: 400px;
+    height: 200px;
+}
+.resimg2
+{
+    width: 250px;
+    height: 126px;
+}
+.social
+{
+    position: absolute;
+    margin: 41px;
+    bottom: 87px;
+    left: 270px;
 }
