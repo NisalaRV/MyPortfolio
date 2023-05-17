@@ -270,8 +270,8 @@ section.artical.resumecls{
 .contact-title
 {
     color: var(--skin-color-);
-    /*text-align: center;*/
-    font-size: 25px;
+/text-align: center;/
+font-size: 25px;
     margin-bottom: 20px;
     margin-top: 25px;
     margin-left: 398px;
@@ -369,7 +369,7 @@ button:hover {
 
 fieldset {
     border: none;
-    margin: 0;
+    margin-top:4vh;
     padding: 0;
 }
 

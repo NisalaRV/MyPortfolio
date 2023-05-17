@@ -1,5 +1,14 @@
 /*<--responsive-->*/
 @media (max-width: 1440px) {
+
+
+    .social {
+        bottom: 46px;
+        left: 392px;
+
+
+    }
+
   .home
   {
       min-width: 101vw;
@@ -8,13 +17,10 @@
         min-width: 101vw;
     }
 
-    .social
-    {
-        bottom: 133px;
-        left: 396px;
-    }
     form#form {
         margin: -41px auto;
+        width: 81vw;
+        padding: 8px;
     }
     .glast
     {
@@ -29,8 +35,9 @@
         margin-top: 81px;
     }
 
-
 }
+
+
 @media (max-width: 1024px) {
 
     h3.Hello
@@ -112,11 +119,7 @@
         width: 577px;
         height: 362px;
     }
-    .contact-title{
-        margin-left: 186px;
-        margin-top: -21px;
 
-    }
     #zzz
     {
         margin-bottom: 47px;
@@ -130,9 +133,8 @@
         height: 150px;
     }
     .social {
-        bottom: 50px;
-        right: 50px;
-        left: 230px;
+        bottom: 47px;
+        margin-left: -106px;
     }
     .aside .nav li a {
         font-size: 16px;
@@ -140,7 +142,8 @@
 
     }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px){
+
     social {
         right: 44px;
         left: 229px;
@@ -149,8 +152,29 @@
         margin-top: -41px;
     }
 
+
+    .glast {
+        width: 590px;
+        height: 363px;
+    }
+    .contact-title
+    {
+        margin-left: 236px;
+    }
+
+
 }
-@media (max-width: 425px) {
+@media (min-width: 424px) and (max-width: 768px){
+
+    .aside
+    {
+        left: -270px;
+        display: none;
+    }
+    .main-content
+    {
+        padding-left: 0;
+    }
 
     .resimg2 {
         height: 150px;
@@ -159,13 +183,89 @@
         width: 164px;
     }
     .glast {
-        width: 338px;
-        height: 219px;
+        width: 590px;
+        height: 363px;
     }
     home .home-img img {
         height: 264px;
     }
+    .section
+    {
+        min-width: 200vw;
+    }
+    .social{
+        bottom: 50px;
+        right: -396px;
+        left: -22px;
+
+    }
+
+    form#form{
+        width: 114vw;
+    }
+    .skil ul {
+        width: 143vw;
+    }
+
+}
+@media (min-width: 375px ) and (max-width: 424px){
+
+    .aside
+    {
+        left: -270px;
+        display: none;
+    }
+    .main-content
+    {
+        padding-left: 0;
+    }
+
+
+
+
+    .section {
+        min-width: 200vw;
+    }
+        .skil ul {
+            width: 160vw;
+        }
+        .social {
+            right: -356px;
+            left: 100px;
+    }
 
 
 }
+@media (max-width: 320px) {
+
+    .aside
+    {
+        left: -270px;
+        display: none;
+    }
+    .main-content
+    {
+        padding-left: 0;
+    }
+
+    .section {
+        min-width: 235vw;
+    }
+    .social{
+        right: -400px;
+
+        left: 105px;
+    }
+    .skil ul {
+        width: 188vw;
+    }
+    .contact-title {
+        left: 104px;
+        margin-top: -17px;
+        font-size: 22px;
+        margin-left: 219px;
+    }
+}
+
+
 
