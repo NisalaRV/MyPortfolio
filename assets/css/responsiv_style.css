@@ -6,14 +6,13 @@
         bottom: 46px;
         left: 392px;
 
-
     }
 
-  .home
-  {
-      min-width: 101vw;
-  }
-    .section{
+    .home {
+        min-width: 101vw;
+    }
+
+    .section {
         min-width: 101vw;
     }
 
@@ -22,15 +21,16 @@
         width: 81vw;
         padding: 8px;
     }
-    .glast
-    {
+
+    .glast {
         width: 891px;
         height: 433px;
     }
-    .teddy
-    {
+
+    .teddy {
         margin-top: 2px;
     }
+
     .cs1 {
         margin-top: 81px;
     }
@@ -40,60 +40,67 @@
 
 @media (max-width: 1024px) {
 
-    h3.Hello
-    {
+    h3.Hello {
         font-size: 28px;
     }
 
-    .typing
-    {
+    .typing {
         font-size: 28px;
     }
+
     .btnhire {
         padding-left: 64px;
     }
+
     .home-img::after {
         right: -56px;
         bottom: -32px;
     }
+
     #hisize {
         font-size: 24px;
         padding-bottom: 10px;
     }
+
     #pid {
         font-size: 14px;
     }
-    .aboutimg>img {
+
+    .aboutimg > img {
         height: 363px;
         border-radius: 20px;
         width: auto;
     }
+
     .nnn {
         position: absolute;
         top: 127px;
         left: 288px;
     }
+
     .aboutset {
         position: relative;
         left: 55px;
         padding-bottom: 20px;
         font-size: 16px;
     }
-    .skil ul
-    {
+
+    .skil ul {
         top: -44px;
         left: -7px;
         width: 71vw;
         height: 19vh;
     }
-    h2.skinc
-    {
+
+    h2.skinc {
         argin-top: -60px;
     }
+
     .resimg {
         width: 250px;
         height: 126px;
     }
+
     .sennn {
         width: 234px;
         height: 146px;
@@ -102,12 +109,14 @@
     .cs1 {
         width: 195px;
     }
+
     .cs2 {
         margin-top: -200px;
         width: 248px;
         margin-left: -58px;
         margin-bottom: 18px;
     }
+
     .cs3 {
         margin-left: 201px;
         width: 195px;
@@ -115,39 +124,45 @@
         margin-top: -232px;
         margin-bottom: 30px;
     }
-    .glast{
+
+    .glast {
         width: 577px;
         height: 362px;
     }
 
-    #zzz
-    {
+    #zzz {
         margin-bottom: 47px;
         margin-top: -51px;
     }
-    .resimg2{
+
+    .resimg2 {
         margin-left: 484px;
         margin-bottom: 53px;
         margin-top: -144px;
         width: 250px;
         height: 150px;
     }
+
     .social {
         bottom: 47px;
         margin-left: -106px;
     }
+
     .aside .nav li a {
         font-size: 16px;
     }
 
-    }
+}
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
+
 
     social {
         right: 44px;
-        left: 229px;
+        left: 363px;
+
     }
+
     #txth1 {
         margin-top: -41px;
     }
@@ -157,115 +172,136 @@
         width: 590px;
         height: 363px;
     }
-    .contact-title
-    {
-        margin-left: 236px;
+
+    .contact-title {
+        margin-left: 200px;
     }
 
 
 }
-@media (min-width: 424px) and (max-width: 768px){
 
-    .aside
-    {
+@media (max-width: 424px) {
+
+    .aside {
         left: -270px;
         display: none;
     }
-    .main-content
-    {
+
+    .main-content {
         padding-left: 0;
     }
 
     .resimg2 {
         height: 150px;
     }
+
     cs3 {
         width: 164px;
     }
+
     .glast {
         width: 590px;
         height: 363px;
     }
+
     home .home-img img {
         height: 264px;
     }
-    .section
-    {
+
+    .section {
         min-width: 200vw;
     }
-    .social{
+
+    .social {
         bottom: 50px;
         right: -396px;
         left: -22px;
 
     }
 
-    form#form{
+    form#form {
         width: 114vw;
     }
+
     .skil ul {
         width: 143vw;
     }
 
 }
-@media (min-width: 375px ) and (max-width: 424px){
 
-    .aside
-    {
+@media (min-width: 375px ) and (max-width: 424px) {
+
+    .aside {
         left: -270px;
         display: none;
     }
-    .main-content
-    {
+
+    .main-content {
         padding-left: 0;
     }
-
-
 
 
     .section {
         min-width: 200vw;
     }
-        .skil ul {
-            width: 160vw;
-        }
-        .social {
-            right: -356px;
-            left: 100px;
+
+    .skil ul {
+        width: 160vw;
+    }
+
+    .social {
+        right: -356px;
+        left: 100px;
+
+    }
+    .contact-title
+    {
+        margin-left: 238px;
+    }
+    .home .home-img img {
+        height: 325px;
     }
 
 
 }
-@media (max-width: 320px) {
 
-    .aside
-    {
+@media (min-width: 320px ) and (max-width:  375px) {
+    /*@media (max-width: 320px) {*/
+    .aside {
         left: -270px;
         display: none;
     }
-    .main-content
-    {
+
+    .main-content {
         padding-left: 0;
     }
 
     .section {
         min-width: 235vw;
+        /*min-height: 75vh;*/
     }
-    .social{
+
+    .social {
         right: -400px;
 
         left: 105px;
+        /*margin-bottom: 285px;*/
     }
+
     .skil ul {
         width: 188vw;
     }
+
     .contact-title {
         left: 104px;
         margin-top: -17px;
         font-size: 22px;
         margin-left: 219px;
     }
-}
 
+    .home .home-img img {
+        height: 325px;
+    }
+}
 
 
