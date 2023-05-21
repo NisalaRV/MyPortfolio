@@ -93,7 +93,7 @@
     }
 
     h2.skinc {
-        argin-top: -60px;
+        margin-top: -60px;
     }
 
     .resimg {
@@ -157,7 +157,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
 
-    social {
+    social{
         right: 44px;
         left: 363px;
 
