@@ -2,6 +2,7 @@
 @media (max-width: 1440px) {
 
 
+
     .social {
         bottom: 46px;
         left: 392px;
@@ -301,6 +302,14 @@
 
     .home .home-img img {
         height: 325px;
+    }
+    .sennn {
+        width: 200px;
+    }
+    .resimg2 {
+        height: 150px;
+
+        margin-left: 465px;
     }
 }
 
