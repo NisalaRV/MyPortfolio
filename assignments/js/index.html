@@ -62,24 +62,24 @@
             <form style="width: 600px" >
                 <div class="mb-3">
                     <label for="CustomerID" class="form-label">Customer ID:</label>
-                    <input type="text" class="form-control" id="CustomerID1">
+                    <input type="text" class="form-control" id="CustomerID">
                 </div>
                 <div class="mb-3">
                     <label for="customerName" class="form-label">Customer Name:</label>
-                    <input type="text" class="form-control" id="customerName1">
+                    <input type="text" class="form-control" id="customerName">
                 </div>
                 <div class="mb-3">
                     <label for="customerAddress" class="form-label">Customer Address:</label>
-                    <input type="text" class="form-control" id="customerAddress1">
+                    <input type="text" class="form-control" id="customerAddress">
                 </div>
                 <div class="mb-3">
-                    <label for="customerSalary" class="form-label">Customer Birthday:</label>
-                    <input type="number" class="form-control" id="customerSalary1">
+                    <label for="customerBirthday" class="form-label">Customer Birthday:</label>
+                    <input type="number" class="form-control" id="customerBirthday">
                 </div>
             </form>
 
             <div class="d-grid gap-2" style="width: 600px">
-                <button  class="btn btn-primary" type="button" >ADD</button>
+                <button id="add"  class="btn btn-primary" type="button" >ADD</button>
                 <button class="btn btn-primary" type="button" style="background-color: red;">DELETE</button>
                 <button class="btn btn-primary" type="button" style="background-color: #20c997">UPDATE</button>
             </div>
@@ -97,42 +97,9 @@
                     <th scope="col" style="background-color: wheat">Birthday</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">C001</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">C002</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tbody id="tblCustomer">
 
-                </tr>
-                <tr>
-                    <th scope="row">C003</th>
 
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-                <tr>
-                    <th scope="row">C004</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-                <tr>
-                    <th scope="row">C005</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
                 </tbody>
             </table>
 
@@ -160,25 +127,25 @@ right: 21vw">
     margin-left: 62px;">
             <form style="width: 600px">
                 <div class="mb-3">
-                    <label for="CustomerID" class="form-label">Item code:</label>
-                    <input type="text" class="form-control" id="CustomerID">
+                    <label for="ItemCode" class="form-label">Item code:</label>
+                    <input type="text" class="form-control" id="ItemCode">
                 </div>
                 <div class="mb-3">
-                    <label for="customerName" class="form-label">Item Name:</label>
-                    <input type="text" class="form-control" id="customerName">
+                    <label for="ItemName" class="form-label">Item Name:</label>
+                    <input type="text" class="form-control" id="ItemName">
                 </div>
                 <div class="mb-3">
-                    <label for="customerAddress" class="form-label"> Price:</label>
-                    <input type="text" class="form-control" id="customerAddress">
+                    <label for="ItemPrice" class="form-label"> Price:</label>
+                    <input type="text" class="form-control" id="ItemPrice">
                 </div>
                 <div class="mb-3">
-                    <label for="customerSalary" class="form-label">Qty:</label>
-                    <input type="number" class="form-control" id="customerSalary">
+                    <label for="ItemQty" class="form-label">Qty:</label>
+                    <input type="number" class="form-control" id="ItemQty">
                 </div>
             </form>
 
             <div class="d-grid gap-2" style="width: 600px">
-                <button class="btn btn-primary" type="button">ADD</button>
+                <button  id="itemAdd" class="btn btn-primary" type="button">ADD</button>
                 <button class="btn btn-primary" type="button" style="background-color: red;">DELETE</button>
                 <button class="btn btn-primary" type="button" style="background-color: #20c997">UPDATE</button>
             </div>
@@ -194,42 +161,8 @@ right: 21vw">
                         <th scope="col" style="background-color: wheat">QTY</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">I001</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">I002</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <tbody id="tblItem">
 
-                    </tr>
-                    <tr>
-                        <th scope="row">I003</th>
-
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">I004</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">I005</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-
-                    </tr>
                     </tbody>
                 </table>
 
@@ -257,30 +190,30 @@ right: 21vw">
     margin-left: 62px;">
             <form style="width: 600px" >
                 <div class="mb-3">
-                    <label for="CustomerID" class="form-label">OrderId:</label>
-                    <input type="text" class="form-control" id="CustomerID2">
+                    <label for="OrderID1" class="form-label">OrderId:</label>
+                    <input type="text" class="form-control" id="OrderID1">
                 </div>
                 <div class="mb-3">
-                    <label for="customerName" class="form-label">Item code:</label>
-                    <input type="text" class="form-control" id="customerName2">
+                    <label for="Itemcode1" class="form-label">Itemcode:</label>
+                    <input type="text" class="form-control" id="Itemcode1">
                 </div>
                 <div class="mb-3">
-                    <label for="inputdate2" class="form-label">Date</label>
-                    <input type="date" class="form-control" id="inputdate2" >
+                    <label for="itemDate" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="itemDate" >
                 </div>
                 <div class="mb-3">
-                    <label for="customerAddress" class="form-label"> Price:</label>
-                    <input type="text" class="form-control" id="customerAddress2">
+                    <label for="OPrice" class="form-label"> Price:</label>
+                    <input type="text" class="form-control" id="OPrice">
                 </div>
                 <div class="mb-3">
-                    <label for="customerSalary" class="form-label">Qty:</label>
-                    <input type="number" class="form-control" id="customerSalary2">
+                    <label for="oQty" class="form-label">Qty:</label>
+                    <input type="number" class="form-control" id="oQty">
                 </div>
             </form>
 
 
             <div class="d-grid gap-2" style="width: 600px">
-                <button class="btn btn-primary" type="button" >ADD</button>
+                <button id="orderAdd" class="btn btn-primary" type="button" >ADD</button>
                 <button class="btn btn-primary" type="button" style="background-color: red;">DELETE</button>
                 <button class="btn btn-primary" type="button" style="background-color: #20c997">UPDATE</button>
             </div>
@@ -298,47 +231,8 @@ right: 21vw">
                     <th scope="col" style="background-color: wheat">Qty</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">O001</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">O002</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <tbody id="tblOrder">
 
-                </tr>
-                <tr>
-                    <th scope="row">O003</th>
-
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-                <tr>
-                    <th scope="row">O004</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-                <tr>
-                    <th scope="row">O005</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
                 </tbody>
             </table>
 
@@ -410,57 +304,67 @@ right: 21vw">
             </div>
         </form>
     </section>
-    <section class="col-5 mt-4 me-4 border border-primary rounded-3" >
 
-        <div class="row px-lg-0 px-sm-5 px-xxl-3 mt-2">
-            <div class="col-5">
-                <div class="mb-2 ">
-                    <label for="total" class="form-label fs-5">Total(RS)</label>
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-2">
-                    <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="total" value="00000.00">
-                </div>
-            </div>
+    <table class="table  table-striped-columns" style="width: 100vw;
+    position: absolute;top: 35vw;">
+        <thead class="bg-primary">
+        <tr>
+            <th  scope="col">Order Id</th>
+            <th scope="col">Cus ID</th>
+            <th scope="col">Item Code</th>
+            <th scope="col">Description</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">QTY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">0001</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">0002</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
 
-            <div class="row px-lg-0 px-sm-5 px-xxl-4">
-                <div class="col-5">
-                    <div class="mb-2">
-                        <label for="subTotal" class="form-label fs-5">Sub Total(RS)</label>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-2">
-                        <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="subTotal" value="00000.00">
-                    </div>
-                </div>
-            </div>
+        </tr>
+        <tr>
+            <th scope="row">0003</th>
 
-            <div class="row gx-3 mt-4">
-                <div class="col">
-                    <div class="mb-3">
-                        <label for="cash" class="form-label">Cash</label>
-                        <input type="text" class="form-control" id="cash" placeholder="0000.00">
-                    </div>
-                </div>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
 
-            </div>
-            <div class="row">
-                <div class="mb-3 mb-xl-5 mb-xxl-4">
-                    <label for="balance" class="form-label">Balance</label>
-                    <input type="text" class="form-control" id="balance" placeholder="0000.00">
-                </div>
-                <div class="mt-1 d-grid col-6 mt-xl-2 mx-auto">
-                    <button style="background-color: #423ade; color: white" type="button" class="btn btn-success">Purchase</button>
-                </div>
-            </div>
+        </tr>
+        <tr>
+            <th scope="row">0004</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
 
-            <div>
-            </div>
-        </div>
+        </tr>
+        <tr>
+            <th scope="row">0005</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
 
-    </section>
+        </tr>
+        </tbody>
+    </table>
 
 </section>
 <script>
@@ -471,8 +375,6 @@ right: 21vw">
         document.getElementById("order").style.display='none';
         document.getElementById("row me-3").style.display='none';
     })
-
-
 
 
     document.getElementById("homeForm").addEventListener('click',function (){
@@ -507,11 +409,119 @@ right: 21vw">
     })
     document.getElementById("orderdetailsForm").addEventListener('click',function (){
         document.getElementById("main").style.display='none';
-        document.getElementById("customer").style.display='inone';
+        document.getElementById("customer").style.display='none';
         document.getElementById("Item").style.display='none';
         document.getElementById("order").style.display='none';
         document.getElementById("row me-3").style.display='inline-block';
     })
+
+    document.getElementById("add").addEventListener("click",function() {
+        let id = document.getElementById("CustomerID").value;
+        let name = document.getElementById("customerName").value;
+        let address = document.getElementById("customerAddress").value;
+        let date = document.getElementById("customerBirthday").value;
+        console.log(id, name, address, date);
+
+
+        let tBody = document.getElementById("tblCustomer");
+
+        let tr = document.createElement("tr");
+        let col1 = document.createElement("td");
+        let col2 = document.createElement("td");
+        let col3 = document.createElement("td");
+        let col4 = document.createElement("td");
+
+        col1.textContent = id;
+        col2.textContent = name;
+        col3.textContent = address;
+        col4.textContent = date;
+
+
+        tr.appendChild(col1);
+        tr.appendChild(col2);
+        tr.appendChild(col3);
+        tr.appendChild(col4);
+
+        tBody.appendChild(tr);
+    });
+        // item data added
+        document.getElementById("itemAdd").addEventListener("click",function() {
+            let code = document.getElementById("ItemCode").value;
+            let name = document.getElementById("ItemName").value;
+            let price = document.getElementById("ItemPrice").value;
+            let date = document.getElementById("ItemQty").value;
+            console.log(code, name, price, date);
+
+
+            let tBody = document.getElementById("tblItem");
+
+            let tr = document.createElement("tr");
+            let col1 = document.createElement("td");
+            let col2 = document.createElement("td");
+            let col3 = document.createElement("td");
+            let col4 = document.createElement("td");
+
+            col1.textContent = code;
+            col2.textContent = name;
+            col3.textContent = price;
+            col4.textContent = date;
+
+
+            tr.appendChild(col1);
+            tr.appendChild(col2);
+            tr.appendChild(col3);
+            tr.appendChild(col4);
+
+
+            tBody.appendChild(tr);
+
+        });
+            // oder
+
+            document.getElementById("orderAdd").addEventListener("click",function(){
+                let OrderId=document.getElementById("OrderID1").value;
+                let Item_code=document.getElementById("Itemcode1").value;
+                let date=document.getElementById("itemDate").value;
+                let price=document.getElementById("OPrice").value;
+                let Qty=document.getElementById("oQty").value;
+                console.log(OrderId,Item_code,date,price,Qty);
+
+
+
+
+                let tBody=document.getElementById("tblOrder");
+
+
+
+                let tr=document.createElement("tr");
+                let col1= document.createElement("td");
+                let col2=document.createElement("td");
+                let col3=document.createElement("td");
+                let col4=document.createElement("td");
+                let col5=document.createElement("td");
+
+
+
+
+
+                col1.textContent=OrderId;
+                col2.textContent=Item_code;
+                col3.textContent=date;
+                col4.textContent=price;
+                col5.textContent=Qty;
+
+
+                tr.appendChild(col1);
+                tr.appendChild(col2);
+                tr.appendChild(col3);
+                tr.appendChild(col4);
+                tr.appendChild(col5);
+
+
+                tBody.appendChild(tr);
+            });
+
+
 
 </script>
 
