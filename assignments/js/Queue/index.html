@@ -1,92 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
+  <meta charset="UTF-8">
+  <title>Queue</title>
 
-        section{
-            position: relative;
-            left: 0;
-            right: 0;
-            top: 200px;
-            margin: auto;
-            width: 1000px;
-            height: 200px;
-            display: grid;
-            grid-gap: 5px;
-            grid-template-rows: repeat(3, 1fr);
-            grid-template-columns: repeat(8, 1fr);
-        }
-        section div{
-            height: calc(200px/4);
-            border-radius: 10px;
+  <style>
 
-        }
+    section{
+      position: absolute;
+      height: 400px;
+      width: 1000px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      gap: 3px;
+      align-items: center;
 
-        section> div:nth-child(1) {
-            grid-row: 1;
+    }
 
+    section>div{
+      flex-grow: 1;
+      height: 100px;
+      border-radius: 20px;
+    }
+    div:first-child{
+      height: 100px;
+      align-self: start;
+    }
 
-        }
-        section > div:nth-child(2) {
-            grid-row: 2;
-            grid-column: 3;
+    div:last-child{
 
-
-        }
-        section > div:nth-child(3) {
-            grid-row: 2;
-            grid-column: 4;
+      height: 100px;
+      align-self: end;
+    }
 
 
-        }
-        section > div:nth-child(4) {
-            grid-row: 2;
-            grid-column: 5;
 
-
-        }
-        section > div:nth-child(5) {
-            grid-row: 2;
-            grid-column: 6;
-
-
-        }
-
-        section > div:nth-child(6) {
-            grid-row: 3;
-            grid-column: 8;
-
-
-        }
-
-
-    </style>
-
+  </style>
 </head>
+<h1 id="se">Java Script Queue</h1>
+<STYLE>
+  #se
+  {
+    margin-left:600px;
+  }
+</STYLE>
 <body>
 <section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div class="top">
+  </div>
+  <!--    <hr>-->
+  <div class="middle"></div>
+  <div class="middle"></div>
+  <div class="middle"></div>
+  <div class="middle"></div>
+  <!--    <hr>-->
+  <div class="bottom"></div>
+
 </section>
 <script>
-    let colors=["red","yellow","green","blue","deeppink","orange"];
 
-    let divArray=document.querySelector("section").children;
-    setInterval(function () {
-        for (let i = 0; i < divArray.length; i++) {
-            divArray[i].style.background = colors[i];
-        }
+  let colors = ["red", "yellow", "green", "blue" , "deeppink", "orange"];
 
-        let lastel = colors.pop();
-        colors.unshift(lastel);
-    },500);
+  let divarray =document.querySelector("section").children;
+
+  setInterval(function (){
+
+    for (let i = 0; i < divarray.length; i++) {
+      console.log(divarray[i]);
+      divarray[i].style.background=colors[i];
+    }
+    let lastElemnt = colors.pop();
+    colors.unshift(lastElemnt);
+
+  },500);
 
 </script>
+
 </body>
+
+
+
 </html>
