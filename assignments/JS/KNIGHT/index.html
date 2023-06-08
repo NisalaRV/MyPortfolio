@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KNIGHT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../assets/css/normalize.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        section:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            position: absolute;
+            top: 0;
+            bottom: 50px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section:nth-child(3) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            gap: 20px;
+        }
+
+        section:nth-child(4) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            /*top: 250px;*/
+            bottom: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section > div {
+            width: 100px;
+            height: 50px;
+            border: black solid 2px;
+        }
+
+        section > button {
+            border: none;
+            border-radius: 10px;
+            width: 100px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        section > button:nth-child(1) {
+            background-color: blue;
+            color: white;
+        }
+
+        section > button:nth-child(2) {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>JavaScript Knight Rider</h1>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section>
+    <button>Start</button>
+    <button>Stop</button>
+</section>
+<section>
+    <p>Animation speed</p>
+    <input type="range" min="1" max="10" value="5">
+</section>
+<script>
+    let colors = ["#ff0000", "#a72727", "#7b2e2e", "#784949", "#af8383"];
+    let i = 0, j = 0, count = 0;
+    let timeInterval;
+    let speed;
+    document.querySelector("body>section:nth-child(3)>button:nth-child(1)").addEventListener("click", function () {
+        clearTimeout(timeInterval);
+        let speedValue = document.querySelector("body>section:nth-child(4)>input").value;
+        switch (speedValue) {
+            case "1":
+                speed = 1000
+                console.log(speed);
+                break;
+            case "2":
+                speed = 900;
+                break;
+            case "3":
+                speed = 800;
+                break;
+            case "4":
+                speed = 700;
+                break;
+            case "5":
+                speed = 600;
+                break;
+            case "6":
+                speed = 500;
+                break;
+            case "7":
+                speed = 400;
+                break;
+            case "8":
+                speed = 300;
+                break;
+            case "9":
+                speed = 200;
+                break;
+            case "10":
+                speed = 100;
+                break;
+        }
+        timeInterval = setInterval(function () {
+            if (count == 0) {
+                if (i < 5) {
+                    let newArray = colors.slice(0, i + 1);
+                    for (let k = i; 0 <= k; k--) {
+                        document.querySelector("section:nth-child(2)").children[k].style.backgroundColor = newArray[j];
+                        j++;
+                    }
+                    j = 0;
+                } else if (i < 10) {
+                    let newArray = colors.slice(i - 4, 5);
+                    j = newArray.length - 1;
+                    for (let k = i - 4; k < 5; k++) {
+                        document.querySelector("section:nth-child(2)").children[i - 5].style.backgroundColor = "white";
+                        document.querySelector("section:nth-child(2)").children[k].style.backgroundColor = newArray[j];
+                        j--;
+                    }
+                    if (i == 9) {
+                        document.querySelector("section:nth-child(2)").children[i - 5].style.backgroundColor = "white";
+                    }
+                }
+                i++;
+                if (i == 10) {
+                    count = 1;
+                    i = 0;
+                    j = 0;
+                }
+            } else if (count == 1) {
+                if (i < 5) {
+                    let newArray = colors.slice(0, i + 1);
+                    for (let k = colors.length - newArray.length; 4 >= k; k++) {
+                        document.querySelector("section:nth-child(2)").children[k].style.backgroundColor = newArray[j];
+                        j++;
+                    }
+                    j = 0;
+                } else if (i < 10) {
+                    let newArray = colors.slice(i - 4, 5);
+                    for (let k = 0; k < 5; k++) {
+                        console.log(i)
+                        document.querySelector("section:nth-child(2)").children[newArray.length].style.backgroundColor = "white";
+                        document.querySelector("section:nth-child(2)").children[k].style.backgroundColor = newArray[k];
+                    }
+                }
+                i++;
+                if (i == 10) {
+                    count = 0;
+                    i = 0;
+                    j = 0;
+                }
+            }
+        }, speed);
+    });
+    document.querySelector("body>section:nth-child(3)>button:nth-child(2)").addEventListener("click", function () {
+        clearTimeout(timeInterval);
+    });
+</script>
+</body>
+</html>
