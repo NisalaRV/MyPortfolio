@@ -10,8 +10,11 @@
 <body>
 <div class="cal">
     <h1>Calculator</h1>
-    <input type="button" value="C" class="key" id="c" onclick="clearScreen()">
+    <input type="button" value="AC" class="key" id="c" onclick="clearScreen()">
+    <input type="button" value="DE" class="key" id="d" onclick="clearScreen()">
     <input type="text" id="result" class="output" placeholder="0">
+    <input type="button" value="." class="key"  id="cc" onclick="display('.')">
+    <input type="button" value="/" class="key function"  id="ccc" onclick="display('/')">
     <div class="keys">
 
         <input type="button" value="7" class="key" onclick="display('7')">
@@ -27,9 +30,9 @@
         <input type="button" value="3" class="key" onclick="display('3')">
         <input type="button" value="x" class="key function" onclick="display('*')">
         <input type="button" value="0" class="key" onclick="display('0')">
-        <input type="button" value="." class="key" onclick="display('.')">
+        <input type="button" value="00" class="key" onclick="display('00')">
         <input type="button" value="=" class="key equal" onclick="solve()">
-        <input type="button" value="/" class="key function" onclick="display('/')">
+
 
 
     </div>
