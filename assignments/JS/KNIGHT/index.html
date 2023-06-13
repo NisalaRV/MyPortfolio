@@ -102,7 +102,9 @@
     let i = 0, j = 0, count = 0;
     let timeInterval;
     let speed;
+    let mySound = new Audio("audio/Knight-Rider-Theme-Song.mp3")
     document.querySelector("body>section:nth-child(3)>button:nth-child(1)").addEventListener("click", function () {
+        mySound.play();
         clearTimeout(timeInterval);
         let speedValue = document.querySelector("body>section:nth-child(4)>input").value;
         switch (speedValue) {
@@ -191,6 +193,7 @@
         }, speed);
     });
     document.querySelector("body>section:nth-child(3)>button:nth-child(2)").addEventListener("click", function () {
+        mySound.pause();
         clearTimeout(timeInterval);
     });
 </script>
