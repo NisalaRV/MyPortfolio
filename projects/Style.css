@@ -1,0 +1,249 @@
+.my_Assignment{
+    background-color: black;
+}
+.my_Assignment .box-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:4rem 0;
+}
+
+.my_Assignment .box-container .box{
+    height: 14rem;
+    width: 16rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin:2rem;
+}
+
+.my_Assignment .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.my_Assignment .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.my_Assignment .box-container .assignment-title {
+    font-size: 20px;
+    color: #f1f3f5;
+    font-weight: 500;
+    margin: 10px 0 15px 0;
+}
+
+.my_Assignment>h1{
+    position: absolute;
+    left: 40vw;
+    color: white;
+}
+
+h1>span{
+    color: #095cec;
+}span {
+     color: #009EF8;
+ }
+
+#css_assignment_section > section:nth-child(1) {
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#js_assignment_section > section:nth-child(1) {
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#css_assignment_section > section:nth-child(2) {
+    position: relative;
+    width: 95%;
+    height: 900px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#js_assignment_section > section:nth-child(2) {
+    position: relative;
+    width: 95%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#css_assignment_section > a {
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+}
+
+#js_assignment_section > a {
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+}
+
+#css_assignment_section > section:nth-child(2) > div:hover {
+    transform: scale(1.075);
+}
+
+#css_assignment_section > section:nth-child(2) > div {
+    position: relative;
+    border-radius: 20px;
+    border: #ffffff solid 5px;
+    box-shadow: 0 0 5px -1px black;
+    transition: transform 1s;
+}
+
+#js_assignment_section > section:nth-child(2) > div:hover {
+    transform: scale(1.075);
+}
+
+#js_assignment_section > section:nth-child(2) > div {
+    position: relative;
+    border-radius: 20px;
+    border: #ffffff solid 5px;
+    box-shadow: 0 0 5px -1px black;
+    transition: transform 1s;
+}
+
+#css_assignment_section > section:nth-child(2) > div > a > div {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+#js_assignment_section > section:nth-child(2) > div > a > div {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(1) > a > div {
+    background: url("../assets/image/Assignments images/css1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(2) > a > div {
+    background: url("../assets/image/Assignments images/css2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(3) > a > div {
+    background: url("../assets/image/Assignments images/css3.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(4) > a > div {
+    background: url("../assets/image/Assignments images/css4.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(5) > a > div {
+    background: url("../assets/image/Assignments images/css5.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(6) > a > div {
+    background: url("../assets/image/Assignments images/css6.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(7) > a > div {
+    background: url("../assets/image/CaseOne1.gif");
+    background-size: cover;
+    background-position: left;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(8) > a > div {
+    background: url("../assets/image/CaseTwo2.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(9) > a > div {
+    background: url("../assets/image/case3.gif");
+    background-size: cover;
+    background-position: left;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(10) > a > div {
+    background: url("../assets/image/Assignments images/animation4.png");
+    background-size: cover;
+    background-position:center;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(11) > a > div {
+    background: url("../assets/image/Assignments images/animation5.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(12) > a > div {
+    background: url("../assets/image/Assignments images/animation6 (2).png");
+    background-size: cover;
+    background-position: center;
+}
+
+#css_assignment_section > section:nth-child(2) > div:nth-child(13) > a > div {
+    background: url("../assets/image/Assignments images/pos1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#js_assignment_section > section:nth-child(2) > div:nth-child(1) > a > div {
+    background: url("../assets/image/Assignments images/js1 (2).png");
+    background-size: cover;
+    background-position: center;
+}
+#js_assignment_section > section:nth-child(2) > div:nth-child(2) > a > div {
+    background: url("../assets/image/Assignments images/js2.png");
+    background-size: cover;
+    background-position: center;
+}
+#js_assignment_section > section:nth-child(2) > div:nth-child(3) > a > div {
+    background: url("../assets/image/Assignments images/js3.png");
+    background-size: cover;
+    background-position: center;
+}
+#js_assignment_section > section:nth-child(2) > div:nth-child(4) > a > div {
+    background: url("../assets/image/Assignments images/calc1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
