@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="assest/poscss.css">
-    <link rel="stylesheet" href="../../../assets/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../../assets/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+
+
+
 </head>
 <body>
 <header>
@@ -81,6 +84,8 @@
                 <button id="add" class="btn btn-primary" type="button">ADD</button>
                 <button class="btn btn-primary" type="button" style="background-color: red;">DELETE</button>
                 <button class="btn btn-primary" type="button" style="background-color: #20c997">UPDATE</button>
+                <button id="getAll" class="btn btn-primary" type="button" style="background-color: #20c997">get all</button>
+
             </div>
 
         </div>
@@ -147,6 +152,7 @@ right: 21vw">
                 <button id="itemAdd" class="btn btn-primary" type="button">ADD</button>
                 <button class="btn btn-primary" type="button" style="background-color: red;">DELETE</button>
                 <button class="btn btn-primary" type="button" style="background-color: #20c997">UPDATE</button>
+                <button  id="getAllItem" class="btn btn-primary" type="button" style="background-color: #20c997">getAllItem</button>
             </div>
             <div class="col">
                 <!--      <table class="mt-4 table table-hover table-borderless table-striped text-center w-100  rounded-3">-->
@@ -215,6 +221,7 @@ right: 21vw">
                 <button id="orderAdd" class="btn btn-primary" type="button">ADD</button>
                 <button class="btn btn-primary" type="button" style="background-color: red;">DELETE</button>
                 <button class="btn btn-primary" type="button" style="background-color: #20c997">UPDATE</button>
+
             </div>
         </div>
         <div class="col">
@@ -366,7 +373,7 @@ right: 21vw">
     </table>
 
 </section>
-<script src="jquery-3.7.0.min.js"></script>
+<script src="Js/jquery-3.7.0.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("main").style.display = 'inline-block';
@@ -414,110 +421,113 @@ right: 21vw">
         document.getElementById("order").style.display = 'none';
         document.getElementById("row me-3").style.display = 'inline-block';
     })
-
-    document.getElementById("add").addEventListener("click", function () {
-        let id = document.getElementById("CustomerID").value;
-        let name = document.getElementById("customerName").value;
-        let address = document.getElementById("customerAddress").value;
-        let date = document.getElementById("customerBirthday").value;
-        console.log(id, name, address, date);
-
-
-        let tBody = document.getElementById("tblCustomer");
-
-        let tr = document.createElement("tr");
-        let col1 = document.createElement("td");
-        let col2 = document.createElement("td");
-        let col3 = document.createElement("td");
-        let col4 = document.createElement("td");
-
-        col1.textContent = id;
-        col2.textContent = name;
-        col3.textContent = address;
-        col4.textContent = date;
-
-
-        tr.appendChild(col1);
-        tr.appendChild(col2);
-        tr.appendChild(col3);
-        tr.appendChild(col4);
-
-        tBody.appendChild(tr);
-    });
-    // item data added
-    document.getElementById("itemAdd").addEventListener("click", function () {
-        let code = document.getElementById("ItemCode").value;
-        let name = document.getElementById("ItemName").value;
-        let price = document.getElementById("ItemPrice").value;
-        let date = document.getElementById("ItemQty").value;
-        console.log(code, name, price, date);
-
-
-        let tBody = document.getElementById("tblItem");
-
-        let tr = document.createElement("tr");
-        let col1 = document.createElement("td");
-        let col2 = document.createElement("td");
-        let col3 = document.createElement("td");
-        let col4 = document.createElement("td");
-
-        col1.textContent = code;
-        col2.textContent = name;
-        col3.textContent = price;
-        col4.textContent = date;
-
-
-        tr.appendChild(col1);
-        tr.appendChild(col2);
-        tr.appendChild(col3);
-        tr.appendChild(col4);
-
-
-        tBody.appendChild(tr);
-
-    });
-    // order data added
-
-    document.getElementById("orderAdd").addEventListener("click", function () {
-        let OrderId = document.getElementById("OrderID1").value;
-        let Item_code = document.getElementById("Itemcode1").value;
-        let date = document.getElementById("itemDate").value;
-        let price = document.getElementById("OPrice").value;
-        let Qty = document.getElementById("oQty").value;
-        console.log(OrderId, Item_code, date, price, Qty);
-
-
-        let tBody = document.getElementById("tblOrder");
-
-
-        let tr = document.createElement("tr");
-        let col1 = document.createElement("td");
-        let col2 = document.createElement("td");
-        let col3 = document.createElement("td");
-        let col4 = document.createElement("td");
-        let col5 = document.createElement("td");
-
-
-        col1.textContent = OrderId;
-        col2.textContent = Item_code;
-        col3.textContent = date;
-        col4.textContent = price;
-        col5.textContent = Qty;
-
-
-        tr.appendChild(col1);
-        tr.appendChild(col2);
-        tr.appendChild(col3);
-        tr.appendChild(col4);
-        tr.appendChild(col5);
-
-
-        tBody.appendChild(tr);
-    });
+// ----customer add---
+//     document.getElementById("add").addEventListener("click", function () {
+//         let id = document.getElementById("CustomerID").value;
+//         let name = document.getElementById("customerName").value;
+//         let address = document.getElementById("customerAddress").value;
+//         let date = document.getElementById("customerBirthday").value;
+//         console.log(id, name, address, date);
+//
+//
+//         let tBody = document.getElementById("tblCustomer");
+//
+//         let tr = document.createElement("tr");
+//         let col1 = document.createElement("td");
+//         let col2 = document.createElement("td");
+//         let col3 = document.createElement("td");
+//         let col4 = document.createElement("td");
+//
+//         col1.textContent = id;
+//         col2.textContent = name;
+//         col3.textContent = address;
+//         col4.textContent = date;
+//
+//
+//         tr.appendChild(col1);
+//         tr.appendChild(col2);
+//         tr.appendChild(col3);
+//         tr.appendChild(col4);
+//
+//         tBody.appendChild(tr);
+//     });
+//     // item data added
+//     document.getElementById("itemAdd").addEventListener("click", function () {
+//         let code = document.getElementById("ItemCode").value;
+//         let name = document.getElementById("ItemName").value;
+//         let price = document.getElementById("ItemPrice").value;
+//         let date = document.getElementById("ItemQty").value;
+//         console.log(code, name, price, date);
+//
+//
+//         let tBody = document.getElementById("tblItem");
+//
+//         let tr = document.createElement("tr");
+//         let col1 = document.createElement("td");
+//         let col2 = document.createElement("td");
+//         let col3 = document.createElement("td");
+//         let col4 = document.createElement("td");
+//
+//         col1.textContent = code;
+//         col2.textContent = name;
+//         col3.textContent = price;
+//         col4.textContent = date;
+//
+//
+//         tr.appendChild(col1);
+//         tr.appendChild(col2);
+//         tr.appendChild(col3);
+//         tr.appendChild(col4);
+//
+//
+//         tBody.appendChild(tr);
+//
+//     });
+//     // order data added
+//
+//     document.getElementById("orderAdd").addEventListener("click", function () {
+//         let OrderId = document.getElementById("OrderID1").value;
+//         let Item_code = document.getElementById("Itemcode1").value;
+//         let date = document.getElementById("itemDate").value;
+//         let price = document.getElementById("OPrice").value;
+//         let Qty = document.getElementById("oQty").value;
+//         console.log(OrderId, Item_code, date, price, Qty);
+//
+//
+//         let tBody = document.getElementById("tblOrder");
+//
+//
+//         let tr = document.createElement("tr");
+//         let col1 = document.createElement("td");
+//         let col2 = document.createElement("td");
+//         let col3 = document.createElement("td");
+//         let col4 = document.createElement("td");
+//         let col5 = document.createElement("td");
+//
+//
+//         col1.textContent = OrderId;
+//         col2.textContent = Item_code;
+//         col3.textContent = date;
+//         col4.textContent = price;
+//         col5.textContent = Qty;
+//
+//
+//         tr.appendChild(col1);
+//         tr.appendChild(col2);
+//         tr.appendChild(col3);
+//         tr.appendChild(col4);
+//         tr.appendChild(col5);
+//
+//
+//         tBody.appendChild(tr);
+//     });
 
 
 </script>
 
-<script src="../../../assets/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+<script src="../../../../assets/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+<script src="Js/Customer.js"></script>
+<script src="Js/item.js"></script>
+
 </body>
 </html>
