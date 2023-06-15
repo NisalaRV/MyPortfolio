@@ -47,3 +47,17 @@ $("#getAll").click(function () {
         $("#tblCustomer").append(row);
     }
 });
+
+$("#tblCustomer").on('click', 'tr', function() {
+
+    let id = $(this).children(":eq(0)").text();
+    let name = $(this).children(":eq(1)").text();
+    let address = $(this).children(":eq(2)").text();
+    let date = $(this).children(":eq(3)").text();
+
+    $("#CustomerID").val(id);
+    $("#customerName").val(name);
+    $("#customerAddress").val(address);
+    $("#customerBirthday").val(date);
+
+});
