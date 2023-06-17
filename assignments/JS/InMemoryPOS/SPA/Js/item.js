@@ -60,3 +60,82 @@ $("#tblItem").on('click', 'tr', function() {
     $("#ItemQty").val(qty);
 
 });
+
+function deleteCustomer(code){
+    for (let i = 0; i < customerDB.length; i++) {
+        if(customerDB[i].code==code){
+            customerDB.splice(i,1);
+            return true;
+        }
+    }
+    return false
+}
+
+$("#btnDelete2").click(function () {
+    let code=$("#ItemCode").val();
+    let consent=confirm("Do You Want to delete ");
+    if(consent){
+        let response = deleteCustomer(code);
+        if(response){
+            alert("item deleted")
+
+        }else {
+            alert("item not deleted")
+        }
+    }
+
+
+});
+
+
+$("#UpdateCustomer2").click(function () {
+
+    let code = $("#ItemCode").val();
+
+    confirm("DO you want update this item")
+    let response = updateCustomer(code);
+
+    if(response){
+        alert("item update sucess")
+
+    }else {
+        alert("Somethin went wrong")
+    }
+});
+
+function updateCustomer(code) {
+    for (let i=0;i<customerDB.length;i++){
+        if(customerDB[i].code==code){
+
+            let name=$("#ItemName").val();
+            let price=$("#ItemPrice").val();
+            let date=$("#ItemQty").val();
+            customerDB[i].name=name;
+            customerDB[i].price=price;
+            customerDB[i].date=date;
+        }
+        return true
+    }
+}
+
+function updateCustomer(code){
+    if (searchCustomer(code)==undefined) {
+        alert("No such item..please check the ID");
+    }else{
+        let consent= confirm("Do you really want to update this item.?");
+        if (consent) {
+            let ItemCode= searchCustomer(code);
+
+            let ItemName = $("#ItemName").val();
+            let ItemPrice = $("#ItemPrice").val();
+            let ItemQty = $("#ItemQty").val();
+
+            ItemCode.name=ItemName;
+            ItemCode.price=ItemPrice;
+            ItemCode.date=ItemQty;
+
+            getAllCustomers();
+        }
+    }
+
+}
