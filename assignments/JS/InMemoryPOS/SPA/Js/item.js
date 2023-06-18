@@ -61,10 +61,10 @@ $("#tblItem").on('click', 'tr', function() {
 
 });
 
-function deleteCustomer(code){
-    for (let i = 0; i < customerDB.length; i++) {
-        if(customerDB[i].code==code){
-            customerDB.splice(i,1);
+function deleteItem(code){
+    for (let i = 0; i < itemDB.length; i++) {
+        if(itemDB[i].code==code){
+            itemDB.splice(i,1);
             return true;
         }
     }
@@ -75,7 +75,7 @@ $("#btnDelete2").click(function () {
     let code=$("#ItemCode").val();
     let consent=confirm("Do You Want to delete ");
     if(consent){
-        let response = deleteCustomer(code);
+        let response = deleteItem(code);
         if(response){
             alert("item deleted")
 
@@ -93,7 +93,7 @@ $("#UpdateCustomer2").click(function () {
     let code = $("#ItemCode").val();
 
     confirm("DO you want update this item")
-    let response = updateCustomer(code);
+    let response = updateItem(code);
 
     if(response){
         alert("item update sucess")
@@ -103,22 +103,22 @@ $("#UpdateCustomer2").click(function () {
     }
 });
 
-function updateCustomer(code) {
-    for (let i=0;i<customerDB.length;i++){
-        if(customerDB[i].code==code){
+function updateorder(code) {
+    for (let i=0;i<itemDB.length;i++){
+        if(itemDB[i].code==code){
 
             let name=$("#ItemName").val();
             let price=$("#ItemPrice").val();
             let date=$("#ItemQty").val();
-            customerDB[i].name=name;
-            customerDB[i].price=price;
-            customerDB[i].date=date;
+            itemDB[i].name=name;
+            itemDB[i].price=price;
+            itemDB[i].date=date;
         }
         return true
     }
 }
 
-function updateCustomer(code){
+function updateItem(code){
     if (searchCustomer(code)==undefined) {
         alert("No such item..please check the ID");
     }else{
@@ -132,9 +132,9 @@ function updateCustomer(code){
 
             ItemCode.name=ItemName;
             ItemCode.price=ItemPrice;
-            ItemCode.date=ItemQty;
+            ItemCode.qty=ItemQty;
 
-            getAllCustomers();
+            getAllitem();
         }
     }
 

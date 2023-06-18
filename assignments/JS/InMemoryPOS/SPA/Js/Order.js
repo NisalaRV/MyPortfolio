@@ -65,3 +65,32 @@ $("#tblOrder").on('click', 'tr', function() {
     $("#oQty").val(qty);
 
 });
+
+// _____________
+
+
+function deleteItem(id){
+    for (let i = 0; i < orderDB.length; i++) {
+        if(orderDB[i].id==id){
+            orderDB.splice(i,1);
+            return true;
+        }
+    }
+    return false
+}
+
+$("#orderdelete").click(function () {
+    let id=$("#OrderID1").val();
+    let consent=confirm("Do You Want to delete ");
+    if(consent){
+        let response = deleteItem(id);
+        if(response){
+            alert("order deleted")
+
+        }else {
+            alert("order not deleted")
+        }
+    }
+
+
+});
