@@ -1,4 +1,3 @@
-
 var orderDB = [];
 
 $("#orderAdd").click(function () {
@@ -20,6 +19,8 @@ $("#orderAdd").click(function () {
 
     orderDB.push(orderOb);
 
+
+
 });
 
 
@@ -33,8 +34,7 @@ $("#getAllOrder").click(function () {
         let code = orderDB[i].code;
         let date = orderDB[i].date;
         let price = orderDB[i].price;
-        let qty = orderDB[i].qty;
-
+        let  qty= orderDB[i].qty;
 
         let row =`<tr>
                      <td>${id}</td>
@@ -69,7 +69,7 @@ $("#tblOrder").on('click', 'tr', function() {
 // _____________
 
 
-function deleteItem(id){
+function deleteOrder(id){
     for (let i = 0; i < orderDB.length; i++) {
         if(orderDB[i].id==id){
             orderDB.splice(i,1);
@@ -83,7 +83,7 @@ $("#orderdelete").click(function () {
     let id=$("#OrderID1").val();
     let consent=confirm("Do You Want to delete ");
     if(consent){
-        let response = deleteItem(id);
+        let response = deleteOrder(id);
         if(response){
             alert("order deleted")
 
@@ -94,3 +94,39 @@ $("#orderdelete").click(function () {
 
 
 });
+
+// // -----------update------------
+
+
+$("#orderupdate").click(function () {
+
+    let id = $("#OrderID1").val();
+
+    confirm("DO you want update this item")
+    let response = updateItem(id);
+
+    if(response){
+        alert("item update sucess")
+
+    }else {
+        alert("Somethin went wrong")
+    }
+});
+
+function updateOder(id) {
+    for (let i=0;i<orderDB.length;i++){
+        if(orderDB[i].id==id){
+
+            let code=$("#Itemcode1").val();
+            let date=$("#itemDate").val();
+            let price=$("#OPrice").val();
+            let qty=$("#oQty").val();
+            orderDB[i].code=code;
+            orderDB[i].date=date;
+            orderDB[i].price=price;
+            orderDB[i].qty=qty;
+        }
+        return true
+    }
+}
+

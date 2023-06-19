@@ -87,6 +87,7 @@ $("#btnDelete").click(function () {
 
 });
 
+// ----------------update/----------
 
 $("#UpdateCustomer").click(function () {
 

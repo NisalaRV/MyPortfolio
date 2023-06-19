@@ -87,8 +87,9 @@ $("#btnDelete2").click(function () {
 
 });
 
+// -------------udpate------------
 
-$("#UpdateCustomer2").click(function () {
+$("#updateItem").click(function () {
 
     let code = $("#ItemCode").val();
 
@@ -103,39 +104,39 @@ $("#UpdateCustomer2").click(function () {
     }
 });
 
-function updateorder(code) {
+function updateItem(code) {
     for (let i=0;i<itemDB.length;i++){
         if(itemDB[i].code==code){
 
             let name=$("#ItemName").val();
             let price=$("#ItemPrice").val();
-            let date=$("#ItemQty").val();
+            let qty=$("#ItemQty").val();
             itemDB[i].name=name;
             itemDB[i].price=price;
-            itemDB[i].date=date;
+            itemDB[i].date=qty;
         }
         return true
     }
 }
 
-function updateItem(code){
-    if (searchCustomer(code)==undefined) {
-        alert("No such item..please check the ID");
-    }else{
-        let consent= confirm("Do you really want to update this item.?");
-        if (consent) {
-            let ItemCode= searchCustomer(code);
-
-            let ItemName = $("#ItemName").val();
-            let ItemPrice = $("#ItemPrice").val();
-            let ItemQty = $("#ItemQty").val();
-
-            ItemCode.name=ItemName;
-            ItemCode.price=ItemPrice;
-            ItemCode.qty=ItemQty;
-
-            getAllitem();
-        }
+$("#ItemCode").keydown(function (e){
+    if (e.key=="Enter"){
+        $("#ItemName").focus();
     }
+})
 
-}
+$("#ItemName").keydown(function (e){
+    if (e.key=="Enter"){
+        $("#ItemPrice").focus();
+    }
+})
+$("#ItemPrice").keydown(function (e){
+    if (e.key=="Enter"){
+        $("#ItemQty").focus();
+    }
+})
+$("#ItemQty").keydown(function (e){
+    if (e.key=="Enter"){
+        $("#ItemCode").focus();
+    }
+})
