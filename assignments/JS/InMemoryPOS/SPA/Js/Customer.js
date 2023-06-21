@@ -1,7 +1,6 @@
 var customerDB = [];
 
-$("#add").click(function () {
-
+function addCustomer() {
 
     let customerID = $("#CustomerID").val();
     let customerName = $("#customerName").val();
@@ -19,12 +18,17 @@ $("#add").click(function () {
 
     customerDB.push(customerOb);
 
+    getAllCustomers();
+    searchCustomer();
+    clearCustomerInputFields();
 
+}
+
+$("#add").click(function () {
+    addCustomer();
 });
 
-
-$("#getAll").click(function () {
-
+function getAllCustomers() {
 
     $("#tblCustomer").empty();
 
@@ -44,22 +48,35 @@ $("#getAll").click(function () {
 
 
         $("#tblCustomer").append(row);
+
+        bindTrEvents();
     }
+}
+
+
+$("#getAll").click(function () {
+    getAllCustomers();
 });
 
-$("#tblCustomer").on('click', 'tr', function() {
 
-    let id = $(this).children(":eq(0)").text();
-    let name = $(this).children(":eq(1)").text();
-    let address = $(this).children(":eq(2)").text();
-    let date = $(this).children(":eq(3)").text();
+function  bindTrEvents(){
+    $('#tblCustomer>tr').click(function () {
 
-    $("#CustomerID").val(id);
-    $("#customerName").val(name);
-    $("#customerAddress").val(address);
-    $("#customerBirthday").val(date);
+        let id = $(this).children(":eq(0)").text();
+        let name = $(this).children(":eq(1)").text();
+        let address = $(this).children(":eq(2)").text();
+        let date = $(this).children(":eq(3)").text();
 
-});
+        $("#CustomerID").val(id);
+        $("#customerName").val(name);
+        $("#customerAddress").val(address);
+        $("#customerBirthday").val(date);
+
+    })
+}
+
+
+// delete
 
 function deleteCustomer(id){
     for (let i = 0; i < customerDB.length; i++) {
@@ -78,7 +95,8 @@ $("#btnDelete").click(function () {
         let response = deleteCustomer(id);
         if(response){
             alert("customer deleted")
-
+            getAllCustomers();
+            clearCustomerInputFields();
         }else {
             alert("customer not deleted")
         }
@@ -89,64 +107,57 @@ $("#btnDelete").click(function () {
 
 // ----------------update/----------
 
-$("#UpdateCustomer").click(function () {
 
-    let id = $("#CustomerID").val();
+$("#UpdateCustomer").click(function (){
+    let id= $("#CustomerID").val();
+    updateCustomer(id);
 
-    confirm("DO you want update this customer")
-    let response = updateCustomer(id);
-
-    if(response){
-        alert("Customer update sucess")
-
-    }else {
-        alert("Somethin went wrong")
-    }
+    clearCustomerInputFields();
 });
 
+
 function updateCustomer(id) {
-    for (let i=0;i<customerDB.length;i++){
-        if(customerDB[i].id==id){
 
-            let name=$("#customerName").val();
-            let address=$("#customerAddress").val();
-            let date=$("#customerBirthday").val();
-            customerDB[i].name=name;
-            customerDB[i].address=address;
-            customerDB[i].date=date;
-        }
-        return true
-    }
-}
-
-function updateCustomer(id){
-    if (searchCustomer(id)==undefined) {
+    if (searchCustomer(id) == undefined) {
         alert("No such Customer..please check the ID");
-    }else{
-        let consent= confirm("Do you really want to update this customer.?");
+    } else {
+        let consent = confirm("Do you really want to update this customer.?");
         if (consent) {
             let customer= searchCustomer(id);
 
-            let customerName = $("#customerName").val();
-            let customerAddress = $("#customerAddress").val();
-            let customerBirthday = $("#customerBirthday").val();
+            let name = $("#customerName").val();
+            let address = $("#customerAddress").val();
+            let date = $("#customerBirthday").val();
 
-            customer.name=customerName;
-            customer.address=customerAddress;
-            customer.date=customerBirthday;
+            customer.name=name;
+            customer.address=address;
+            customer.date=date;
 
             getAllCustomers();
         }
     }
-
 }
 function searchCustomer(id){
     return customerDB.find(function (customer){
-        //if the search id match with customer record
-        //then return that object
-        return  customer.id==id;
+        return customer.id==id;
     });
 }
+function clearCustomerInputFields() {
+    $("#CustomerID,#customerName,#customerAddress,#customerBirthday").val("");
+    $("#CustomerID").focus();
+}
+
+
+//disable tab
+$("#CustomerID,#customerName,#customerAddress,#customerBirthday").keydown(function (e) {
+
+    if (e.key == "Tab") {
+        e.preventDefault();
+    }
+});
+
+
+
 
 $("#CustomerID").keydown(function (e){
     if (e.key=="Enter"){
@@ -166,9 +177,10 @@ $("#customerAddress").keydown(function (e){
 })
 $("#customerBirthday").keydown(function (e){
     if (e.key=="Enter"){
-        $("#CustomerID").focus();
+        addCustomer();
+        clearCustomerInputFields();
     }
-})
+});
 
 
 $("#CustomerID").keyup(function (e) {

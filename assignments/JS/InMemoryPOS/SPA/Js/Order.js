@@ -19,7 +19,9 @@ function addOrder(){
 
     orderDB.push(orderOb);
 
-    getAllOrders();
+    getAllOrder();
+    searchOrder();
+    clearOrderInputFields();
 
 }
 
@@ -99,7 +101,8 @@ $("#orderdelete").click(function () {
         let response = deleteOrder(id);
         if(response){
             alert("order deleted")
-
+            getAllOrder();
+            clearOrderInputFields();
         }else {
             alert("order not deleted")
         }
@@ -137,7 +140,7 @@ function updateOrder(id){
             order.price=price;
             order.qty=qty;
 
-            getAllOrders();
+           getAllOrder();
         }
     }
 
