@@ -5,7 +5,8 @@
     <title>Title</title>
     <link rel="stylesheet" href="assest/poscss.css">
     <link rel="stylesheet" href="../../../assets/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
-
+    <script src="models/orderdetailsModel.js"></script>
+    <script src="models/orderModel.js"></script>
 
 
 </head>
@@ -253,126 +254,151 @@ right: 21vw">
 </section>
 
 <!--order details-->
-<section id="row me-3">
-    <p style="color: purple" class="fs-2 text-center fw-semibold">Place Order Form</p>
+
+<section id="orderdetails">
+<section id="Invoice" class="row me-3">
+    <p class="fs-2 text-center fw-semibold">Place Order Form</p>
     <section class="col-7 p-3 mb-2 bg-primary-subtle text-emphasis-primary border border-light-subtle rounded-3 shadow
-     p-3 mb-5 bg-body-tertiary rounded w-50 m-auto mt-4 m" style="background-color: purple !important;">
+     p-3 mb-5 bg-body-tertiary rounded w-50 m-auto mt-4 m" style="background-color: #0a0a0a !important;">
         <h2 style="color: white">Invoice Details</h2>
         <form style="color: white" class="row g-3">
             <div class="col-md-6">
-                <label for="orderId" class="form-label">OrderId</label>
-                <select id="orderId" class="form-select">
-                    <option selected>O001</option>
-                    <option>...</option>
-                </select>
+                <label for="CusName" class="form-label">OrderId</label>
+                <input type="text" class="form-control" id="orderId" disabled>
             </div>
             <div class="col-md-6">
                 <label for="date" class="form-label">Oder Date</label>
                 <input type="date" class="form-control" id="date">
             </div>
             <div class="col-md-6">
-
                 <label for="CusId" class="form-label">CustomerId</label>
-                <select id="CusId" class="form-select">
-                    <option selected>C001</option>
-                    <option>...</option>
+                <select id="CusId" class="form-select" >
+                    <option selected></option>
+                    <!--                        <option>...</option>-->
                 </select>
             </div>
             <div class="col-md-6">
                 <label for="CusName" class="form-label">Customer Name</label>
-                <input type="text" class="form-control" id="CusName">
+                <input type="text" class="form-control" id="CusName" disabled>
             </div>
+
+
             <div class="col-md-3">
                 <label for="code" class="form-label">Code</label>
                 <select id="code" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                    <option selected></option>
+                    <!--                        <option>...</option>-->
                 </select>
             </div>
             <div class="col-md-3">
                 <label for="dec" class="form-label">Description</label>
-                <input type="text" class="form-control" id="dec">
-            </div>
-            <div class="col-md-3">
-                <label for="qtyhl" class="form-label">Unit price</label>
-                <input type="number" class="form-control" id="qtyhl">
+                <input type="text" class="form-control" id="dec" disabled>
             </div>
             <div class="col-md-2">
-                <label for="qtyh" class="form-label">Qty. On Hand</label>
-                <input type="number" class="form-control" id="qtyh">
+                <label for="UnitPrice" class="form-label">Unit price</label>
+                <input type="number" class="form-control" id="UnitPrice" disabled>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-2">
+                <label for="ODQty" class="form-label">Qty. On Hand</label>
+                <input type="number" class="form-control" id="ODQty" disabled>
+            </div>
+
+
+            <div class="col-md-2">
                 <label for="qty" class="form-label">Qty</label>
                 <input type="number" class="form-control" id="qty">
             </div>
 
             <div class="col-12">
-                <button style="color: white" type="submit" class="btn btn-primary">Add to cart</button>
+                <button id="btnAddToCart" style="color: white" type="submit" class="btn btn-primary">Add to cart</button>
             </div>
         </form>
     </section>
+    <section class="col-5 mt-4 me-4 border border-primary rounded-3">
 
-    <table class="table  table-striped-columns" style="width: 100vw;
-    position: absolute;top: 35vw;">
+        <div class="row px-lg-0 px-sm-5 px-xxl-3 mt-2">
+            <div class="col-5">
+                <div class="mb-2 ">
+                    <label for="total" class="form-label fs-5">Total(RS)</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-2">
+                    <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="total"
+                           value="00000.00">
+                </div>
+            </div>
+
+            <div class="row px-lg-0 px-sm-5 px-xxl-4">
+                <div class="col-5">
+                    <div class="mb-2">
+                        <label for="subTotal" class="form-label fs-5">Sub Total(RS)</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-2">
+                        <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="subTotal"
+                               value="00000.00">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-3 mt-4">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="cash" class="form-label">Cash</label>
+                        <input type="text" class="form-control" id="cash" placeholder="0000.00">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row gx-3 mt-4">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="cash" class="form-label">Discount</label>
+                        <input type="text" class="form-control" id="discount" placeholder="0000.00">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="mb-3 mb-xl-5 mb-xxl-4">
+                    <label for="balance" class="form-label">Balance</label>
+                    <input type="text" class="form-control" id="balance" placeholder="0000.00">
+                </div>
+                <div class="mt-1 d-grid col-6 mt-xl-2 mx-auto">
+                    <button id="purchaseOrder" style="background-color: #423ade; color: white" type="button" class="btn btn-success">
+                        Purchase
+                    </button>
+                </div>
+            </div>
+
+            <div>
+            </div>
+        </div>
+
+    </section>
+    <table class="table  table-striped-columns" style="
+    width: 97vw;
+    top: 85vh;
+    position: absolute;
+    left: 1vw;">
         <thead class="bg-primary">
         <tr>
             <th scope="col">Order Id</th>
-            <th scope="col">Cus ID</th>
             <th scope="col">Item Code</th>
-            <th scope="col">Description</th>
-            <th scope="col">Unit Price</th>
-            <th scope="col">QTY</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Total</th>
+
         </tr>
         </thead>
-        <tbody>
-        <tr>
-            <th scope="row">0001</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">0002</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tbody id="placeOrders">
 
-        </tr>
-        <tr>
-            <th scope="row">0003</th>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-        <tr>
-            <th scope="row">0004</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-        <tr>
-            <th scope="row">0005</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
         </tbody>
     </table>
-
+</section>
 </section>
 <script src="Controllers/jquery-3.7.0.min.js"></script>
 <script>
@@ -381,7 +407,7 @@ right: 21vw">
         document.getElementById("customer").style.display = 'none';
         document.getElementById("Item").style.display = 'none';
         document.getElementById("order").style.display = 'none';
-        document.getElementById("row me-3").style.display = 'none';
+        document.getElementById("orderdetails").style.display = 'none';
     })
 
 
@@ -390,14 +416,14 @@ right: 21vw">
         document.getElementById("customer").style.display = 'none';
         document.getElementById("Item").style.display = 'none';
         document.getElementById("order").style.display = 'none';
-        document.getElementById("row me-3").style.display = 'none';
+        document.getElementById("rorderdetails").style.display = 'none';
     })
     document.getElementById("customerForm").addEventListener('click', function () {
         document.getElementById("main").style.display = 'none';
         document.getElementById("customer").style.display = 'inline-block';
         document.getElementById("Item").style.display = 'none';
         document.getElementById("order").style.display = 'none';
-        document.getElementById("row me-3").style.display = 'none';
+        document.getElementById("orderdetails").style.display = 'none';
     })
 
     document.getElementById("itemForm").addEventListener('click', function () {
@@ -405,7 +431,7 @@ right: 21vw">
         document.getElementById("customer").style.display = 'none';
         document.getElementById("Item").style.display = 'inline-block';
         document.getElementById("order").style.display = 'none';
-        document.getElementById("row me-3").style.display = 'none';
+        document.getElementById("orderdetails").style.display = 'none';
     })
 
     document.getElementById("OrderForm").addEventListener('click', function () {
@@ -413,14 +439,14 @@ right: 21vw">
         document.getElementById("customer").style.display = 'none';
         document.getElementById("Item").style.display = 'none';
         document.getElementById("order").style.display = 'inline-block';
-        document.getElementById("row me-3").style.display = 'none';
+        document.getElementById("orderdetails").style.display = 'none';
     })
     document.getElementById("orderdetailsForm").addEventListener('click', function () {
         document.getElementById("main").style.display = 'none';
         document.getElementById("customer").style.display = 'none';
         document.getElementById("Item").style.display = 'none';
         document.getElementById("order").style.display = 'none';
-        document.getElementById("row me-3").style.display = 'inline-block';
+        document.getElementById("orderdetails").style.display = 'inline-block';
     })
 // ----customer add---
 //     document.getElementById("add").addEventListener("click", function () {
@@ -535,6 +561,10 @@ right: 21vw">
 <script src="Controllers/Validations/customerValidation.js"></script>
 <script src="Controllers/Validations/itemValidation.js"></script>
 <script src="Controllers/Validations/orderValidation.js"></script>
+<script src="models/customerModel.js"></script>
+<script src="models/itemModel.js"></script>
+<script src="models/orderdetailsModel.js"></script>
+<script src="models/orderModel.js"></script>
 
 </body>
 </html>

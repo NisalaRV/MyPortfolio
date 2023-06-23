@@ -9,9 +9,9 @@ function addItems() {
 
 
     let itemOb = {
-        code: itemCode,
-        name: ItemName,
-        price: itemPrice,
+        itemCode: itemCode,
+        ItemName: ItemName,
+        unitPrice: itemPrice,
         qty: itemQty
     }
 
@@ -20,6 +20,7 @@ function addItems() {
     getAllItems();
     searchItem();
     clearItemInputFields();
+    loadAllItemCode();
 
 }
 $("#itemAdd").click(function () {
@@ -33,9 +34,9 @@ function getAllItems() {
 
 
     for (let i = 0; i < itemDB.length; i++) {
-        let code = itemDB[i].code;
-        let name = itemDB[i].name;
-        let price = itemDB[i].price;
+        let code = itemDB[i].itemCode;
+        let name = itemDB[i].ItemName;
+        let price = itemDB[i].unitPrice;
         let qty = itemDB[i].qty;
 
         let row = `<tr>
@@ -128,8 +129,8 @@ function updateItem(code) {
             let price = $("#ItemPrice").val();
             let qty = $("#ItemQty").val();
 
-            item.name = name;
-            item.price = price;
+            item.ItemName = name;
+            item.unitPrice = price;
             item.qty = qty;
 
             getAllItems();
@@ -140,7 +141,7 @@ function updateItem(code) {
 
 function searchItem(code){
     return itemDB.find(function (item){
-        return item.code==code;
+        return item.itemCode==code;
     });
 }
 

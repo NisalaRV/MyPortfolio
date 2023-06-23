@@ -21,6 +21,8 @@ function addCustomer() {
     getAllCustomers();
     searchCustomer();
     clearCustomerInputFields();
+    loadAllCustomerId();
+
 
 }
 
