@@ -1,5 +1,5 @@
 # MyPortfolio
-This is for Demonstrating my Skills
+This is My Personal Web
 <h3>Technology & Frameworks</h3>
 
 <ul>
@@ -10,10 +10,8 @@ This is for Demonstrating my Skills
   <li>Jquery</li>
 </ul>
 
-<h3>References</h3>
-Site Map :https://drive.google.com/file/d/1__ypGAGzRmcXbNBtQiBNRE2HcL-giyty/view?usp=sharing <br>
-Wirefram : https://drive.google.com/file/d/1NVRK9_tdn7dZ86CedGYHQif59jNCmPJf/view?usp=sharing<br>
-Mockup :https://www.figma.com/file/qbN6LvuI79cToi2VcBGK6I/Mockup?type=design&node-id=0%3A1&mode=design&t=CQoCUWntATpHnjhA-1<br>
 
-<h3>Deployment</h3>
-GitHub Pages : https://nisalarv.github.io/MyPortfolio/ <br>
+🔗 <a href="https://drive.google.com/file/d/1__ypGAGzRmcXbNBtQiBNRE2HcL-giyty/view?usp=sharing " target="_blank"> Site Map Link</a><br>
+🔗 <a href="https://drive.google.com/file/d/1NVRK9_tdn7dZ86CedGYHQif59jNCmPJf/view?usp=sharing " target="_blank"> Wire-frame</a><br>
+🔗 <a href="https://www.figma.com/file/qbN6LvuI79cToi2VcBGK6I/Mockup?type=design&node-id=0%3A1&mode=design&t=CQoCUWntATpHnjhA-1" target="_blank">MockUp</a><br>
+🔗 <a href="https://nisalarv.github.io/MyPortfolio/" target="_blank"> GitHub Pages</a><br>
