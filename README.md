@@ -15,3 +15,6 @@ This is My Personal Web
 🔗 <a href="https://drive.google.com/file/d/1NVRK9_tdn7dZ86CedGYHQif59jNCmPJf/view?usp=sharing " target="_blank"> Wire-frame</a><br>
 🔗 <a href="https://www.figma.com/file/qbN6LvuI79cToi2VcBGK6I/Mockup?type=design&node-id=0%3A1&mode=design&t=CQoCUWntATpHnjhA-1" target="_blank">MockUp</a><br>
 🔗 <a href="https://nisalarv.github.io/MyPortfolio/" target="_blank"> GitHub Pages</a><br>
+
+Dekstop View 
+![image](https://github.com/NisalaRV/MyPortfolio/assets/116428103/8ffb042b-3ebd-4649-acf2-9282e19f2e00)
