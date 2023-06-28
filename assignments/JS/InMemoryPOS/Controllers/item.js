@@ -77,7 +77,7 @@ function bindItemTrEvent() {
 
 function deleteItem(code){
     for (let i = 0; i < itemDB.length; i++) {
-        if(itemDB[i].code==code){
+        if(itemDB[i].itemCode==code){
             itemDB.splice(i,1);
             return true;
         }
