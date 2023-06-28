@@ -289,6 +289,15 @@
     </div>
     <!--main content end-->
 </div>
-
+<div id="loader">
+    <div></div>
+</div>
+<script>
+    let loader = document.getElementById("loader");
+    window.addEventListener("load", function () {
+        console.log("This message will print just after fully loading the website")
+        loader.style.display = 'none';
+    });
+</script>
 </body>
 </html>
