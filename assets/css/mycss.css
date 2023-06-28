@@ -688,7 +688,7 @@ h2.skincolors
 #loader {
     transition: opacity 1s;
     position: fixed;
-    z-index: 5;
+    z-index: 15;
     top: 0;
     left: 0;
     bottom: 0;
