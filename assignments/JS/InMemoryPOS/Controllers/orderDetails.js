@@ -3,6 +3,7 @@ generateOrderId();
 let OdId = generateOrderId();
 $("#orderId").val(OdId);
 
+// combobox ekata data load krnwa
 function loadAllCustomerId(){
     $("#CusId").empty();
     for (let customerArElement of customerDB){
