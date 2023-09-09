@@ -265,6 +265,7 @@ h4.home_social
 section.artical.resumecls{
     margin: 50px ;
 
+
 }
 /* contact*/
 .contact-title
@@ -490,6 +491,7 @@ h2.skincolors
 {
     border-left: .3rem solid #FF6E00;
     border-bottom: 10px;
+    margin: -22px;
 }
 .homee
 {
@@ -549,6 +551,7 @@ h2.skincolors
     font-style: italic;
     margin-top: -11px;
     font-size: 30px;
+    margin-bottom: 14px;
 }
 
 .active{
@@ -714,11 +717,21 @@ h2.skincolors
 #c1 {
     width: 300px;
     height: 200px;
+    padding-right: 13px;
 }
 
 #c2 {
     width: 300px;
     height: 200px;
+    padding-right: 13px;
+}
+#b2{
+    margin-left: 750px;
+
+}
+#resumelast
+{
+    margin-top: -42px;
 }
 
 #c3 {
