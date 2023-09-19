@@ -96,3 +96,60 @@ header>div>h1{
 }
 
 
+@media all and (max-width: 1440px) {
+    #certificate {
+        grid-template-rows: repeat(13, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        height: 3000px;
+        grid-gap: 20px;
+    }
+
+    #certificate > div {
+        box-shadow: 0px 0px 17px -7px black;
+    }
+}
+
+
+@media all and (max-width: 425px) and (min-width: 375px) {
+    #certificate {
+        height: 3500px;
+    }
+}
+
+@media all and (max-width: 600px) and (min-width: 426px) {
+    #certificate {
+        height: 1200px;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 650px) and (min-width: 600px) {
+    #certificate {
+        height: 1500px;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 768px) and (min-width: 650px) {
+    #certificate {
+        height: 1900px;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (max-width: 1024px) and (min-width: 768px) {
+    #certificate {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        height: 1200px;
+    }
+}
+@media all and (max-width: 1440px) and (min-width: 1024px) {
+    #certificate {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        height: 1000px;
+    }
+}
