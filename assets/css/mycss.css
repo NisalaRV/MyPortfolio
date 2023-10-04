@@ -331,6 +331,7 @@ button {
     position:absolute;
 
 
+
 }
 
 button:hover {
@@ -800,3 +801,11 @@ h2.skincolors
     width: 100%;
     display: block;
 }
+
+.Assgmnetbutton
+{
+  width: 600px;
+}
+
+
+/*--------------------*/
