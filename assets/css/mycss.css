@@ -519,6 +519,15 @@ h2.skincolors
     margin-left: -16px;
     margin-bottom: -37px;
 }
+.Assignment2
+{
+    height: 30px;
+    width: 30px;
+    margin-left: -17px;
+    margin-bottom: -37px;
+
+}
+
 .pro1
 {
     height: 35px;
@@ -800,11 +809,18 @@ h2.skincolors
 {
     width: 100%;
     display: block;
+
 }
 
 .Assgmnetbutton
 {
   width: 600px;
+}
+.Assignment-img :hover{
+
+    transform: scale(1.15);
+    background-color: white;
+
 }
 
 
