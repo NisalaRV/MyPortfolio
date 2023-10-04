@@ -559,9 +559,9 @@ h2.skincolors
 .achiv
 {
     font-style: italic;
-    margin-top: -11px;
-    font-size: 30px;
-    margin-bottom: 14px;
+    font-size: 50px;
+    /*margin-top: -160px;*/
+    margin-left: 50px;
 }
 
 .active{
@@ -725,15 +725,19 @@ h2.skincolors
 
 
 #c1 {
-    width: 300px;
-    height: 200px;
-    padding-right: 13px;
+    width: 500px;
+    height: 330px;
+    padding: 20px;
+    /*margin-bottom: 100px;*/
+
+
 }
 
 #c2 {
-    width: 300px;
-    height: 200px;
-    padding-right: 13px;
+    width: 500px;
+    height: 330px;
+    /*margin-right: 700px;*/
+    padding: 20px;
 }
 /*#b2{*/
 /*    margin-left: 750px;*/
@@ -745,10 +749,18 @@ h2.skincolors
 }
 
 #c3 {
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 330px;
+    /*margin-top: 200px;*/
+    padding: 20px;
 }
 
+#c4{
+    width: 500px;
+    height: 330px;
+    /*margin-top: 200px;*/
+    padding: 20px;
+}
 
 /*project*/
 .projects .container
@@ -825,3 +837,8 @@ h2.skincolors
 
 
 /*--------------------*/
+#rusumebutton{
+    margin-left: 425px;
+    margin-top: 10px;
+    width: 100px;
+}
