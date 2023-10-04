@@ -738,6 +738,8 @@ h2.skincolors
     width: 300px;
     height: 200px;
 }
+
+
 /*project*/
 .projects .container
 {
@@ -747,7 +749,7 @@ h2.skincolors
 {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .projects .projects-item
 {
@@ -763,6 +765,37 @@ h2.skincolors
     cursor: pointer;
 }
 .projects .projects-item-inner .projects-img img
+{
+    width: 100%;
+    display: block;
+}
+
+
+/*Assignmnet*/
+.Assignment .container
+{
+    padding-bottom: 40px;
+}
+.Assignment .Assignment-heading   .
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.Assignment .Assignment-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.Assignment .Assignment-item-inner
+{
+    border: 6px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Assignment .Assignment-item-inner .Assignment-img img
 {
     width: 100%;
     display: block;
