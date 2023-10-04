@@ -637,29 +637,29 @@ h2.skincolors
     background-image: url("../image/232.jpg");
 
 }
-.anim
-{
-    position: absolute;
-    margin: 326px;
-}
-.cs1
-{
-    margin-left: -276px;
-    margin-top: 161px;
-    width: 250px;
-}
-.cs2
-{
-    margin-top: -192px;
-}
-.cs3
-{
-    margin-left: 393px;
-    width: 300px;
-    height: 200px;
-    margin-top: -232px;
-    margin-bottom: 30px;
-}
+/*.anim*/
+/*{*/
+/*    position: absolute;*/
+/*    margin: 326px;*/
+/*}*/
+/*.cs1*/
+/*{*/
+/*    margin-left: -276px;*/
+/*    margin-top: -143px;*/
+/*    width: 250px;*/
+/*}*/
+/*.cs2*/
+/*{*/
+/*    margin-top: -192px;*/
+/*}*/
+/*.cs3*/
+/*{*/
+/*    margin-left: 393px;*/
+/*    width: 300px;*/
+/*    height: 200px;*/
+/*    margin-top: -232px;*/
+/*    margin-bottom: 30px;*/
+/*}*/
 .imgcls
 {
     width: 350px;
@@ -725,10 +725,10 @@ h2.skincolors
     height: 200px;
     padding-right: 13px;
 }
-#b2{
-    margin-left: 750px;
+/*#b2{*/
+/*    margin-left: 750px;*/
 
-}
+/*}*/
 #resumelast
 {
     margin-top: -42px;
@@ -737,4 +737,33 @@ h2.skincolors
 #c3 {
     width: 300px;
     height: 200px;
+}
+/*project*/
+.projects .container
+{
+    padding-bottom: 40px;
+}
+.projects .project-heading
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.projects .projects-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.projects .projects-item-inner
+{
+    border: 6px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.projects .projects-item-inner .projects-img img
+{
+    width: 100%;
+    display: block;
 }
